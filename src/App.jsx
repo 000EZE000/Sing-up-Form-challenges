@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
+
 import './App.css'
+import Form from './components/form/Form'
 
 function App() {
 
@@ -20,26 +22,7 @@ function App() {
       <div>
         <button> Try it free 7 days then $20/mo. thereafter </button>
       </div>
-      <form action="">
-        <input
-          placeholder=' First Name'
-          type="text" />
-        <input
-          placeholder=' Last Name'
-          type="text" />
-        <input
-          placeholder=' Email'
-          type="text" />
-        <input
-          placeholder=' Address'
-          type="text" />
-        <input
-          placeholder='Password'
-          type="submit" value="Claim your free trial" />
-      </form>
-      <p>
-        By clicking the button, you are agreeing to our Terms and Services
-      </p>
+      <Form />
     </div >
   )
 }
